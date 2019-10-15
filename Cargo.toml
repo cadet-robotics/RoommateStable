@@ -1,0 +1,17 @@
+[package]
+name = "RoommateStable"
+version = "0.1.0"
+authors = ["powerboat9 <powerboat9.gamer@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.7"
+rayon = "1.2"
+parking_lot = "0.9"
+crossbeam = "0.7.2"
+
+[profile.release]
+debug = true
+lto = false
